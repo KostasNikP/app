@@ -9,7 +9,7 @@ import 'package:provider/provider.dart';
 
 
 class LoginPage extends StatelessWidget {
-  final VoidCallback onTap; // Προσθήκη της παραμέτρου onTap
+  final VoidCallback onTap; 
 
   LoginPage({super.key, required this.onTap});
 
