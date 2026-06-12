@@ -83,12 +83,12 @@ Widget build(BuildContext context) {
     if (usernameController.text.isNotEmpty &&
         passwordController.text.isNotEmpty) {
 
-      // ➕ Από εδώ: βάλε τα δεδομένα στον Provider
+    
       final userProvider = Provider.of<UserProvider>(context, listen: false);
       userProvider.setUsername(usernameController.text);
-      userProvider.setEmail("example@example.com"); // Ή ό,τι email έχεις
+      userProvider.setEmail("example@example.com"); 
 
-      // ➡️ Μετά πήγαινε στο Shop Page
+   
       Navigator.pushNamed(context, '/shop_page');
     } else {
       showDialog(
