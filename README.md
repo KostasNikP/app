@@ -65,14 +65,15 @@ lib/
 ├── main.dart                   # App entry point, MultiProvider setup
 ├── auth/
 │   ├── pages/
-│   │   ├── login_page.dart         # Login screen
-│   │   ├── Registration_Page.dart  # Registration screen
-│   │   ├── shop_page.dart          # Main shop with product sections
-│   │   ├── product_page.dart       # Product detail view
-│   │   ├── cart_page.dart          # Shopping cart
-│   │   ├── payment_page.dart       # Credit card checkout
-│   │   ├── Delivery_Progress_Page.dart  # Post-payment receipt
-│   │   └── profile_page.dart       # User profile + theme toggle
+│   │   ├── login_page.dart              # Login screen
+│   │   ├── registration_page.dart       # Registration screen
+│   │   ├── shop_page.dart               # Main shop with product sections
+│   │   ├── product_page.dart            # Product detail view
+│   │   ├── cart_page.dart               # Shopping cart
+│   │   ├── payment_page.dart            # Credit card checkout
+│   │   ├── delivery_progress_page.dart  # Post-payment receipt
+│   │   ├── shop_filter_page.dart        # Filtered products view
+│   │   └── profile_page.dart            # User profile + theme toggle
 │   ├── models/
 │   │   ├── product.dart        # Product data model
 │   │   ├── shop.dart           # Shop state (cart logic, receipt)
@@ -80,6 +81,7 @@ lib/
 │   ├── components/
 │   │   ├── my_product_tile.dart    # Product card widget
 │   │   ├── my_cart_tile.dart       # Cart item widget
+│   │   ├── my_quantity_selector.dart # Quantity +/- widget
 │   │   ├── my_drawer.dart          # Side navigation drawer
 │   │   ├── search_bar.dart         # Search & filter component
 │   │   └── ...                     # Other reusable widgets
@@ -102,8 +104,8 @@ lib/
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/KostasNikP/cvv-app.git
-cd cvv-app
+git clone https://github.com/KostasNikP/app.git
+cd app
 
 # 2. Install dependencies
 flutter pub get
@@ -117,7 +119,7 @@ flutter run
 ## 📦 Dependencies
 
 ```yaml
-provider: ^6.1.2           # State management
+provider: ^6.1.2            # State management
 flutter_credit_card: ^4.0.1 # Animated credit card widget
 flutter_rating_bar: ^4.0.1  # Product star ratings
 google_nav_bar: ^5.0.6      # Bottom navigation
@@ -143,4 +145,3 @@ cupertino_icons: ^1.0.6     # iOS-style icons
 
 **Kostas Nikp**  
 GitHub: [@KostasNikP](https://github.com/KostasNikP)
-
