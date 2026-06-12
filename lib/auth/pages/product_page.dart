@@ -77,7 +77,7 @@ class _ProductPageState extends State<ProductPage> {
                       ),
                     ),
 
-                  // Εικόνα με περιθώριο και συγκεκριμένο ύψος
+               
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 10),
                     child: ClipRRect(
@@ -164,7 +164,7 @@ class _ProductPageState extends State<ProductPage> {
                           ],
                         ),
 
-                        // Κενός χώρος για το κουμπί κάτω
+                   
                         const SizedBox(height: 100),
                       ],
                     ),
@@ -173,7 +173,7 @@ class _ProductPageState extends State<ProductPage> {
             ),
           ),
 
-          // Add to cart button — πάντα κολλητό στο κάτω μέρος
+        
           Positioned(
             left: 0,
             right: 0,
