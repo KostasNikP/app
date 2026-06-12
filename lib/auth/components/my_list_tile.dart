@@ -51,7 +51,7 @@ class _MyListTileState extends State<MyListTile> {
           ),
           title: Text(widget.text,
           style: TextStyle(
-              color: widget.textColor ?? Theme.of(context).colorScheme.onSurface, // Χρησιμοποιούμε το προκαθορισμένο χρώμα εάν δεν έχει δοθεί ένα εξειδικευμένο
+              color: widget.textColor ?? Theme.of(context).colorScheme.onSurface, 
             ),
           ),
         ),
