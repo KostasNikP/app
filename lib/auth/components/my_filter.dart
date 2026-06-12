@@ -54,7 +54,7 @@ class _FilterOptionsState extends State<FilterOptions> {
           value: value,
           activeColor: Theme.of(context).colorScheme.primary,
           checkColor: Theme.of(context).colorScheme.surface,  // tick
-          side: BorderSide(         // Άσπρο border όταν είναι unchecked
+          side: BorderSide(         
             color: Theme.of(context).colorScheme.primary,
             width: 2,
           ),
