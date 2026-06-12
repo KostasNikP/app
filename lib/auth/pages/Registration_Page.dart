@@ -3,7 +3,7 @@ import 'package:shop_app/auth/components/my_textfield.dart';
 import 'package:flutter/material.dart';
 
 class RegistrationPage extends StatefulWidget {
-  final VoidCallback onTap; // Προσθήκη της παραμέτρου onTap
+  final VoidCallback onTap; 
 
   const RegistrationPage({super.key, required this.onTap});
 
