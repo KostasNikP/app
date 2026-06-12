@@ -13,14 +13,14 @@ class DeliveryProgressPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Delivery Progress'),
         backgroundColor: Colors.transparent,
-        automaticallyImplyLeading: false, // Αφαιρεί το προεπιλεγμένο κουμπί πίσω
+        automaticallyImplyLeading: false, 
       ),
       body: Column(
         children: [
           const MyReceipt(),
           ElevatedButton(
             onPressed: () {
-              // Μετάβαση στη σελίδα καταστήματος όταν πατηθεί το κουμπί
+              
               Navigator.push(
                 context,
                 MaterialPageRoute(
