@@ -18,7 +18,7 @@ class _PaymentPageState extends State<PaymentPage> {
   String cvvCode = '';
   bool isCvvFocused = false;
 
-  // Ο χρήστης πατάει "Πληρωμή"
+  // Πληρωμή
   void userTappedPay() {
     if (formKey.currentState!.validate()) {
       showDialog(
@@ -112,7 +112,7 @@ class _PaymentPageState extends State<PaymentPage> {
               showBackView: isCvvFocused,
               onCreditCardWidgetChange: (CreditCardBrand brand) {},
             ),
-            // Το φόρμα για την είσοδο των στοιχείων της κάρτας
+            //  φόρμα για την είσοδο των στοιχείων της κάρτας
             Theme(
               data: Theme.of(context).copyWith(
                 inputDecorationTheme: InputDecorationTheme(
@@ -155,7 +155,7 @@ class _PaymentPageState extends State<PaymentPage> {
                 formKey: formKey,
               ),
             ),
-            // Το κουμπί "Πληρωμή"
+            // Το κουμπί Πληρωμή
             MyButton(
               onTap: userTappedPay,
               text: "PAY",
